@@ -113,8 +113,12 @@ pgrph9copyr[8].textContent = siteContent['footer']["copyright"];
 
 
 const navColor = document.querySelectorAll('a');
-navColor.style.color = 'green';
+navColor.forEach (element => {
+element.style.color= "green";
+} )
 
+const newNav = document.createElement('a');
+newNav.textContent = 'Self Destruct';
 
 
 
