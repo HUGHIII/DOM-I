@@ -119,9 +119,13 @@ element.style.color= "green";
 
 const newNav = document.createElement('a');
 newNav.textContent = 'Self Destruct';
+const parentEl = document.querySelector('nav');
+parentEl.prepend(newNav);
 
-
-
+const newNav2 = document.createElement('a');
+newNav2.textContent = 'Another Self Destruct';
+const parentElEnd = document.querySelector('nav');
+parentElEnd.append(newNav2);
 
 
 
